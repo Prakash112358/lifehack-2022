@@ -1,0 +1,20 @@
+
+
+<html>
+
+<style>
+Body {
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: lightblue;
+}
+</style>
+
+<p>Keylock Box Pin: {{code}}</p>
+
+<p>Please enter the pin number in the keylock box and retrieve key to help elderly</p>
+
+<form action = "{{ url_for('location_disp') }}" method="POST">
+	<button type="submit">Elderly Rescued</button>
+</form>
+
+</html>
